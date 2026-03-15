@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Data;
 using System.Data.Common;
+using System.Diagnostics.Metrics;
 using System.Numerics;
 using System.Reflection.Metadata;
 using System.Security.Claims;
@@ -311,15 +312,31 @@ namespace AdvancedC_01
             // Enables safe assignment of base types to derived type generic parameters.
             #endregion
             #region question17
-//            Difference Between Covariance and Contravariance
+            //            Difference Between Covariance and Contravariance
 
-//           Covariance and contravariance are opposite concepts in generics, dealing with type assignment compatibility in interfaces and delegates.
+            //           Covariance and contravariance are opposite concepts in generics, dealing with type assignment compatibility in interfaces and delegates.
 
-//            Covariance(out): allows derived → base for return/ output types.
+            //            Covariance(out): allows derived → base for return/ output types.
 
-//Contravariance(in): allows base → derived for input / parameter types.
+            //Contravariance(in): allows base → derived for input / parameter types.
 
-//Covariance is read - only, contravariance is write - only.
+            //Covariance is read - only, contravariance is write - only.
+            #endregion
+            #region question18
+            // How Do Static Members Work in Generic Types?
+
+            //Static members in generic types behave differently from normal classes because each closed constructed type has its own copy of static members.
+            //Static members are per type parameter
+
+            //MyClass<int> has its own static fields.
+
+            //MyClass<string> has a different static field.
+
+            //Static members are shared across instances of the same constructed type
+
+            //All instances of MyClass<int> share the same static member.
+
+            //Static constructors run once per constructed type
             #endregion
         }
     }
