@@ -103,6 +103,20 @@ namespace AdvancedC_01
         //}
 
         #endregion
+        #region question6
+        //Q6: What is a Generic Interface?
+
+        //  A generic interface is an interface that uses type parameters(like<T>) so it can work with different data types.
+        //  It defines methods that operate on a generic type, and the actual type is specified when a class implements the interface.
+        //  This makes the interface reusable and type-safe.
+
+        //Example: IRepository<T>:
+        //        public interface IRepository<T>
+        //{
+        //    void Add(T item);
+        //    T Get(int id);
+        //}
+        #endregion
     }
     }
 }
