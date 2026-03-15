@@ -1,7 +1,9 @@
 ﻿using System.ComponentModel;
+using System.Data.Common;
 using System.Numerics;
 using System.Reflection.Metadata;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace AdvancedC_01
@@ -45,6 +47,34 @@ namespace AdvancedC_01
         //    public T Get()
         //    {
         //        return item;
+        //    }
+        //}
+        #endregion
+        #region question3
+        //Q3: What are Multiple Type Parameters ?
+        //  Multiple type parameters mean that a generic class or method uses more than one type parameter.
+        //   Each parameter represents a different data type that will be specified when the class is used.
+
+        //    Example: Pair<TKey, TValue>:
+        //    public class Pair<TKey, TValue>
+        //{
+        //    public TKey Key { get; set; }
+        //    public TValue Value { get; set; }
+
+        //    public Pair(TKey key, TValue value)
+        //    {
+        //        Key = key;
+        //        Value = value;
+        //    }
+
+        //    public TKey GetKey()
+        //    {
+        //        return Key;
+        //    }
+
+        //    public TValue GetValue()
+        //    {
+        //        return Value;
         //    }
         //}
         #endregion
