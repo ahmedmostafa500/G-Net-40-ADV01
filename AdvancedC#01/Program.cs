@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Data;
 using System.Data.Common;
 using System.Numerics;
 using System.Reflection.Metadata;
@@ -157,6 +158,20 @@ namespace AdvancedC_01
         //        return Item;
         //    }
         //}
+        #endregion
+        #region question9
+       // Q9: What is the new() Constraint?
+
+       //The new() constraint in generics requires that the type parameter must have a public parameterless constructor
+
+       //     example:
+       //     public class Creator<T> where T : new()
+       // {
+       //     public T CreateObject()
+       //     {
+       //         return new T();
+       //     }
+       // }
         #endregion
     }
     }
