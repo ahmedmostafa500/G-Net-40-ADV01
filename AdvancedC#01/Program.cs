@@ -226,32 +226,40 @@ namespace AdvancedC_01
             //struct or class constraint
             //new () constraint
 
-    //        Example
+            //        Example
 
-    //      Suppose we have a base class and an interface:
+            //      Suppose we have a base class and an interface:
 
-    //   public class Person
-    //    {
-    //        public string Name { get; set; }
-    //    }
+            //   public class Person
+            //    {
+            //        public string Name { get; set; }
+            //    }
 
-    //    public interface IPrintable
-    //    {
-    //        void Print();
-    //    }
+            //    public interface IPrintable
+            //    {
+            //        void Print();
+            //    }
 
-    //    public class Manager<T>
-    //where T : Person, IPrintable, new()
-    //    {
-    //        public void ShowInfo()
-    //        {
-    //            T obj = new T();   // allowed because of 'new()'
-    //            obj.Print();       // allowed because of IPrintable
-    //            Console.WriteLine(obj.Name); // allowed because of Person
-    //        }
-    //    }
-        #endregion
+            //    public class Manager<T>
+            //where T : Person, IPrintable, new()
+            //    {
+            //        public void ShowInfo()
+            //        {
+            //            T obj = new T();   // allowed because of 'new()'
+            //            obj.Print();       // allowed because of IPrintable
+            //            Console.WriteLine(obj.Name); // allowed because of Person
+            //        }
+            //    }
+            #endregion
+            #region question13
+           // What Does the default Keyword Do in Generics?
+    
+           //In generics, the default keyword is used to return the default value of a type parameter T.
 
-    }
+           //Because a generic type T can be a value type or a reference type,
+           //default(T) ensures the correct default value is returned without knowing the type in advance
+            #endregion
+
+        }
     }
 }
