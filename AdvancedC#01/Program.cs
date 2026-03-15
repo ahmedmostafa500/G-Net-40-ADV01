@@ -78,6 +78,31 @@ namespace AdvancedC_01
         //    }
         //}
         #endregion
+        #region question4
+        // Q4: What is a Generic Method?
+
+        //A generic method is a method that uses type parameters(such as < T >)
+        //so it can work with different data types without rewriting the method for each type.
+
+        //  Example: Swap < T > Method
+        // public static void Swap<T>(ref T a, ref T b)
+        //   {
+        //    T temp = a;
+        //    a = b;
+        //   b b = temp;
+        //   }
+        #endregion
+        #region question5
+        //Q5: Write a Generic Method FindMax<T> that Finds the Maximum Value:
+        //        public static T FindMax<T>(T a, T b) where T : IComparable<T>
+        //{
+        //    if (a.CompareTo(b) > 0)
+        //        return a;
+        //    else
+        //        return b;
+        //}
+
+        #endregion
     }
     }
 }
