@@ -310,6 +310,17 @@ namespace AdvancedC_01
 
             // Enables safe assignment of base types to derived type generic parameters.
             #endregion
+            #region question17
+//            Difference Between Covariance and Contravariance
+
+//           Covariance and contravariance are opposite concepts in generics, dealing with type assignment compatibility in interfaces and delegates.
+
+//            Covariance(out): allows derived → base for return/ output types.
+
+//Contravariance(in): allows base → derived for input / parameter types.
+
+//Covariance is read - only, contravariance is write - only.
+            #endregion
         }
     }
 }
