@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Data;
 using System.Data.Common;
 using System.Numerics;
@@ -260,28 +261,41 @@ namespace AdvancedC_01
             //default(T) ensures the correct default value is returned without knowing the type in advance
             #endregion
             #region question14
-        //    : Write a SafeList<T> That Returns default When the Index Is Invalid:
-        //    public class SafeList<T>
-        //{
-        //    private List<T> items = new List<T>();
+            //    : Write a SafeList<T> That Returns default When the Index Is Invalid:
+            //    public class SafeList<T>
+            //{
+            //    private List<T> items = new List<T>();
 
-        //    // Add item to the list
-        //    public void Add(T item)
-        //    {
-        //        items.Add(item);
-        //    }
+            //    // Add item to the list
+            //    public void Add(T item)
+            //    {
+            //        items.Add(item);
+            //    }
 
-        //    public T Get(int index)
-        //    {
-        //        if (index >= 0 && index < items.Count)
-        //        {
-        //            return items[index];
-        //        }
-        //        else
-        //        {
-        //            return default(T); // return default value if index invalid
-        //        }
-        //    }
+            //    public T Get(int index)
+            //    {
+            //        if (index >= 0 && index < items.Count)
+            //        {
+            //            return items[index];
+            //        }
+            //        else
+            //        {
+            //            return default(T); // return default value if index invalid
+            //        }
+            //    }
+            #endregion
+            #region question15
+           // 1-What is Covariance?
+
+           // Covariance allows a generic type to preserve the assignment compatibility of more derived types to less derived types.
+
+           //  2-The out Keyword
+
+           // The out keyword in generics indicates that a type parameter is covariant.
+
+           //Only used in interfaces or delegates, not in classes.
+
+           // Enables safe assignment of derived types to base types.
             #endregion
         }
     }
