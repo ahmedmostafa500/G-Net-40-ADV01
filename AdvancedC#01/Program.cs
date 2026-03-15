@@ -117,6 +117,27 @@ namespace AdvancedC_01
         //    T Get(int id);
         //}
         #endregion
+        #region question7
+        // What is the struct Constraint?
+        //The struct constraint in generics is used to restrict the type parameter so that it must be a value type(a structure).
+
+        //Example:
+
+        //    public class ValueContainer<T> where T : struct
+        //{
+        //    public T Value;
+
+        //    public ValueContainer(T value)
+        //    {
+        //        Value = value;
+        //    }
+
+        //    public T GetValue()
+        //    {
+        //        return Value;
+        //    }
+        //}
+        #endregion
     }
     }
 }
