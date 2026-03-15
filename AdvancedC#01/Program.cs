@@ -285,17 +285,30 @@ namespace AdvancedC_01
             //    }
             #endregion
             #region question15
-           // 1-What is Covariance?
+            // 1-What is Covariance?
 
-           // Covariance allows a generic type to preserve the assignment compatibility of more derived types to less derived types.
+            // Covariance allows a generic type to preserve the assignment compatibility of more derived types to less derived types.
 
-           //  2-The out Keyword
+            //  2-The out Keyword
 
-           // The out keyword in generics indicates that a type parameter is covariant.
+            // The out keyword in generics indicates that a type parameter is covariant.
 
-           //Only used in interfaces or delegates, not in classes.
+            //Only used in interfaces or delegates, not in classes.
 
-           // Enables safe assignment of derived types to base types.
+            // Enables safe assignment of derived types to base types.
+            #endregion
+            #region question16
+            //1-What is Contravariance?
+
+            // Contravariance allows a generic type to accept a less derived type where a more derived type is expected.
+
+            //    2-The in Keyword
+
+            // The in keyword in generics indicates that a type parameter is contravariant.
+
+            // Only allowed in interfaces or delegates.
+
+            // Enables safe assignment of base types to derived type generic parameters.
             #endregion
         }
     }
