@@ -338,6 +338,15 @@ namespace AdvancedC_01
 
             //Static constructors run once per constructed type
             #endregion
+            #region question19
+//            How Can You Inherit from a Generic Class ?
+
+//    In C#, a generic class can be used as a base class. You can either:
+
+//Keep the derived class generic
+
+//Specify the type parameter when inheriting
+            #endregion
         }
     }
 }
