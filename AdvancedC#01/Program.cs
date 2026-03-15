@@ -252,14 +252,37 @@ namespace AdvancedC_01
             //    }
             #endregion
             #region question13
-           // What Does the default Keyword Do in Generics?
-    
-           //In generics, the default keyword is used to return the default value of a type parameter T.
+            // What Does the default Keyword Do in Generics?
 
-           //Because a generic type T can be a value type or a reference type,
-           //default(T) ensures the correct default value is returned without knowing the type in advance
+            //In generics, the default keyword is used to return the default value of a type parameter T.
+
+            //Because a generic type T can be a value type or a reference type,
+            //default(T) ensures the correct default value is returned without knowing the type in advance
             #endregion
+            #region question14
+        //    : Write a SafeList<T> That Returns default When the Index Is Invalid:
+        //    public class SafeList<T>
+        //{
+        //    private List<T> items = new List<T>();
 
+        //    // Add item to the list
+        //    public void Add(T item)
+        //    {
+        //        items.Add(item);
+        //    }
+
+        //    public T Get(int index)
+        //    {
+        //        if (index >= 0 && index < items.Count)
+        //        {
+        //            return items[index];
+        //        }
+        //        else
+        //        {
+        //            return default(T); // return default value if index invalid
+        //        }
+        //    }
+            #endregion
         }
     }
 }
