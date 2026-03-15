@@ -138,6 +138,26 @@ namespace AdvancedC_01
         //    }
         //}
         #endregion
+        #region question8
+        //Q8: What is the class Constraint?
+        //The class constraint in generics restricts the type parameter so that it must be a reference type.
+
+        //Example:
+        //    public class ReferenceContainer<T> where T : class
+        //{
+        //    public T Item;
+
+        //    public ReferenceContainer(T item)
+        //    {
+        //        Item = item;
+        //    }
+
+        //    public T GetItem()
+        //    {
+        //        return Item;
+        //    }
+        //}
+        #endregion
     }
     }
 }
